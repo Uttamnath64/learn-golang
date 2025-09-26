@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+</head>
+<body>
+    <h1>{{ .title }}</h1>
+    <p>Hello, {{ .name }} 👋</p>
+
+    <ul>
+        {{ range .items }}
+            <li>{{ . }}</li>
+        {{ else }}
+            <li>No items found</li>
+        {{ end }}
+    </ul>
+</body>
+</html>
